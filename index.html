@@ -4,9 +4,25 @@
     <meta charset="utf-8">
     <title>title</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   </head>
   <body>
     <h1>Page</h1>
+
+    <div id="app">
+        {{ message }}
+
+        <div>
+            <input v-model="A">
+            <p>{{ A1 }}</p>
+            <p>{{ A2 }}</p>
+            <button v-on:click="test">Test</button>
+        </div>
+    </div>
+
+   
+
+    <script src="script.js"></script>
   </body>
 </html>
