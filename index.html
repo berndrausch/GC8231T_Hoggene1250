@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1><a href="https://www.geocaching.com/geocache/GC8231T">GC8231T</a></h1>
+
+    <div id="app">
+      <table>
+        <tr>
+          <td>A (Ochinheim)</td>
+          <td><input v-model="A"></td>
+          <td>{{ A1 }}</td>
+        </tr>
+        <tr>
+          <td>B (große Kreisstadt)</td>
+          <td><input v-model="B"></td>
+          <td>{{ B1 }}</td>
+        </tr>        
+        <tr>
+          <td>C (Landesgartenschau)</td>
+           <td><input v-model="C"></td>
+          <td>{{ C1 }}</td>
+        </tr>
+        <tr>
+          <td>D (Hockenheim)</td>
+           <td><input v-model="D"></td>
+          <td>{{ D1 }}</td>
+        </tr>
+        <tr>
+          <td>E (Gemeindegebiet)</td>
+           <td><input v-model="E"></td>
+          <td>{{ E1 }}</td>
+        </tr>
+        <tr>
+          <td>F (Eduard Schopf)</td>
+           <td><input v-model="F"></td>
+          <td>{{ F1 }}</td>
+        </tr>
+        <tr>
+          <td>G (Eröffnungsrennen)</td>
+           <td><input v-model="G"></td>
+          <td>{{ G1 }}</td>
+        </tr>
+        <tr>
+          <td>H (Ehrenbürgerschaft)</td>
+           <td><input v-model="H"></td>
+          <td>{{ H1 }}</td>
+        </tr>
+        <tr>
+          <td>I (Brauerei)</td>
+           <td><input v-model="I"></td>
+          <td>{{ I1 }}</td>
+        </tr>
+        <tr>
+          <td>J (Braukunst)</td>
+           <td><input v-model="J"></td>
+          <td>{{ J1 }}</td>
+        </tr>
+        <tr>
+          <td>K (Straßenradfahrer)</td>
+           <td><input v-model="K"></td>
+          <td>{{ K1 }}</td>
+        </tr>
+        <tr>
+          <td>L (Luftsport)</td>
+           <td><input v-model="L"></td>
+          <td>{{ L1 }}</td>
+        </tr>
+        <tr>
+          <td>M (Zigarrenfabrik)</td>
+           <td><input v-model="M"></td>
+          <td>{{ M1 }}</td>
+        </tr>
+        <tr>
+          <td>N (Wahrzeichen)</td>
+           <td><input v-model="N"></td>
+          <td>{{ N1 }}</td>
+        </tr>
+        <tr>
+          <td>O (Bach)</td>
+           <td><input v-model="O"></td>
+          <td>{{ O1 }}</td>
+        </tr>
+        <tr>
+          <td>27.Mai1970</td>
+           <td><input v-model="Date1970"></td>
+        </tr>
+        <tr>
+          <td>31. Dezember1990</td>
+           <td><input v-model="Date1990"></td>
+        </tr>
+        <tr>
+          <td>Y</td>
+          <td>{{ Y }}</td>
+        </tr>
+        <tr>
+          <td>Z</td>
+          <td>{{ Z }}</td>
+        </tr>
+        <tr>
+          <td>Solution</td>
+          <td>N 49° {{ NorthDisplay }} E 008° {{ EastDisplay }}</td>
+        </tr>
+      </table>
+
+      <button v-on:click="update">Update</button>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>
